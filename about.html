@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>page transition</title>
+
+  <!-- Main CSS file -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body data-barba="wrapper">
+  <div class="loading-container">
+    <div class="loading-screen">
+    </div>
+  </div>
+
+  <header>
+    <nav class="main-navigation">
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li class="active"><a href="about.html">about</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Only this section changes on link navigation -->
+  <main data-barba="container" data-barba-namespace="about">
+    <div class="heading-container">
+      <h1 class="main-heading is-animated"><br><span class="green-heading-bg">the about page</span></h1>
+      <a href="index.html">
+        <img src="https://scontent.fktm7-1.fna.fbcdn.net/v/t1.0-9/23905380_320938225053888_3664634659804543923_n.jpg?_nc_cat=100&_nc_sid=85a577&_nc_ohc=z-UpuhN2fX4AX-dI2Jy&_nc_ht=scontent.fktm7-1.fna&oh=e2c583a7b4ed7ce74c11a7a772722d9a&oe=5E905758" class="main-img is-animated">
+      </a>
+    </div>
+  </main>
+
+</body>
+
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<!-- Barba Core -->
+<script src="https://unpkg.com/@barba/core"></script>
+
+<!-- GSAP for animation -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+<!-- Main JS file -->
+<script src="custom.js"></script>
+
+
+</html>
